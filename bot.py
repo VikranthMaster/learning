@@ -8,7 +8,7 @@ client = commands.Bot(command_prefix = "!")
 
 db = sqlite3.connect("build.sql")
 
-@client.command()
+@client.event
 async def on_ready():
     print("Bot is ready")
 
